@@ -1,14 +1,23 @@
 # claude-devlogger
 
-Session logging toolkit for Claude Code.
+A structured development logging system powered by Claude Code. Track your coding sessions, document problems and solutions, and build a complete history of your project journey.
+
+## Why Use This?
+
+When working with Claude Code on a project, you naturally discuss goals, encounter problems, and find solutions. claude-devlogger captures this process so you can:
+
+- Remember what you tried and why it worked (or didn't)
+- Track time spent across multiple coding sessions
+- Review your problem-solving journey when the project ends
+- Pick up exactly where you left off in future sessions
 
 ## Features
 
-- **Session Tracking** - Log goals, plans, problems, solutions, and milestones
-- **Time Tracking** - Automatic duration calculation and cumulative time
-- **Slash Commands** - `/devlog-start`, `/devlog-end`, `/devlog-status`, `/devlog-final`
-- **Natural Language** - Also works with "start logging", "end session", etc.
-- **Final Assessment** - Generate comprehensive project reflection when done
+- **Development Logs** - Record goals, plans, problems, solutions, and milestones for each coding session
+- **Time Tracking** - Automatically calculate session duration and total project time
+- **Slash Commands** - Use `/devlog-start`, `/devlog-end`, `/devlog-status`, `/devlog-final`
+- **Natural Language** - Or just say "start logging", "end session", "add this to the log"
+- **Final Assessment** - Generate a comprehensive project reflection when you're done
 
 ## Quick Setup
 
@@ -17,7 +26,7 @@ Session logging toolkit for Claude Code.
 cd your-project
 git clone https://github.com/Mingxi-Farron/claude-devlogger.git
 
-# Run setup (bash)
+# Run setup (bash or git bash on Windows)
 ./claude-devlogger/setup.sh
 
 # Or PowerShell
@@ -26,63 +35,70 @@ git clone https://github.com/Mingxi-Farron/claude-devlogger.git
 
 ## What Setup Does
 
-1. Copies `.claude/commands/` to your project root
-2. Copies `devlog/` folder to your project root
-3. Adds devlog section to your `CLAUDE.md` (creates if needed)
+1. Adds Claude Code commands to `.claude/commands/`
+2. Creates a `devlog/` folder for your logs
+3. Updates your `CLAUDE.md` so Claude knows how to help with logging
 
 ## After Setup
 
 ```
 your-project/
-├── CLAUDE.md              (with devlog instructions)
-├── .claude/
-│   └── commands/
-│       ├── devlog-start.md
-│       ├── devlog-end.md
-│       ├── devlog-status.md
-│       └── devlog-final.md
+├── CLAUDE.md                  (Claude reads this for context)
+├── .claude/commands/          (slash commands live here)
 ├── devlog/
-│   ├── README.md          (project info - edit this)
-│   ├── TIME.md            (time tracker)
-│   ├── logs/              (session logs)
-│   └── media/             (screenshots)
-└── claude-devlogger/      (can delete)
+│   ├── README.md              (your project info - edit this)
+│   ├── TIME.md                (cumulative time tracker)
+│   ├── logs/                  (one file per session)
+│   └── media/                 (screenshots if needed)
+└── claude-devlogger/          (safe to delete after setup)
 ```
 
 ## Usage
 
-### Start a Session
+### Starting a Coding Session
 ```
 /devlog-start
 ```
-Or say: "start logging", "begin session"
+Or say: "let's start logging" or "begin a new session"
 
-### End a Session
+Claude will create a log file, ask for your goals, and note your plan.
+
+### During a Session
+Just talk naturally:
+- "note this down" or "add to the log"
+- "we solved the auth bug by..."
+- "this approach failed because..."
+
+### Ending a Session
 ```
 /devlog-end
 ```
-Or say: "end session", "stop logging"
+Or say: "let's wrap up" or "end the session"
 
-### Check Status
+Claude will ask what you accomplished, what problems you faced, and update the time tracker.
+
+### Checking Progress
 ```
 /devlog-status
 ```
-Or say: "how much time?", "session status"
+Or say: "how much time have I spent?" or "show session status"
 
-### Final Assessment (end of project)
+### Project Complete
 ```
 /devlog-final
 ```
-Or say: "finalize project", "generate assessment"
+Or say: "generate final assessment" or "summarize the project"
 
-## Session Log Structure
+Claude will read all your session logs and create a comprehensive reflection.
+
+## What Gets Logged
 
 Each session captures:
-- **Goals** - What you're trying to achieve
-- **Plan** - Your approach
-- **Problems & Solutions** - What went wrong, what you tried, what worked
-- **Milestones** - Progress checkpoints
-- **Conclusion** - Summary and carry-over items
+- **Goals** - What you set out to accomplish
+- **Plan** - How you intended to approach it
+- **Problems & Solutions** - What broke, what you tried, what worked
+- **Milestones** - Key progress points reached
+- **Conclusion** - Summary and items for next time
 
 ## License
 
