@@ -145,21 +145,18 @@ Each session captures:
 - **Screenshots** - Timestamped visual progress notes
 - **Conclusion** - Summary and items for next time
 
-## Screenshot Logging
+## Screenshot Logging (Optional)
 
 For visual projects (games, interactive art, UI work), you can log screenshots without moving files around.
 
-**Setup:** Add your screenshot folder path to `devlog/README.md`:
-```
-- **Screenshots:** D:/Screenshots/MyProject/
-```
+**Setup:** On your first session, Claude will ask if you want screenshot logging. If yes, you'll set a dedicated folder path (not your OS default, which gets cluttered). If you don't need it, just skip - Claude won't ask again.
 
 **Usage:** After taking a screenshot, just say:
 ```
 screenshot: the lighting finally looks right
 ```
 
-Claude logs the timestamp and your description. The actual files stay where your OS saves them.
+Claude logs the timestamp and your description. The actual files stay where your OS saves them - no file management needed.
 
 ## License
 

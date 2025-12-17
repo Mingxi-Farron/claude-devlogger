@@ -5,7 +5,7 @@
 - **Tech Stack:** [e.g., Next.js, Unreal Engine 5.7, Python]
 - **Description:** [One-line project description]
 - **Started:** [YYYY-MM-DD]
-- **Screenshots:** [path to screenshot folder, e.g., D:/Screenshots/ProjectName/]
+- **Screenshots:** [will be configured on first session, or "none" if not needed]
 
 ---
 
