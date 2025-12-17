@@ -98,42 +98,45 @@ your-project/
 
 ## Usage
 
-### Starting a Coding Session
-```
-/devlog-start
-```
-Or say: "let's start logging" or "begin a new session"
+Just talk to Claude naturally. No special syntax needed.
+
+### Starting a Session
+> "let's start logging" or "begin a new session"
 
 Claude will create a log file, ask for your goals, and note your plan.
 
 ### During a Session
-Just talk naturally:
-- "note this down" or "add to the log"
-- "we solved the auth bug by..."
-- "this approach failed because..."
-- "screenshot: the particle system working" (logs timestamp + description)
+> "note this down" or "add to the log"
+> "we solved the auth bug by..."
+> "this approach failed because..."
+> "screenshot: the particle system working"
 
 ### Ending a Session
-```
-/devlog-end
-```
-Or say: "let's wrap up" or "end the session"
+> "let's wrap up" or "end the session"
 
 Claude will ask what you accomplished, what problems you faced, and update the time tracker.
 
 ### Checking Progress
-```
-/devlog-status
-```
-Or say: "how much time have I spent?" or "show session status"
+> "how much time have I spent?" or "what's my progress?"
 
 ### Project Complete
-```
-/devlog-final
-```
-Or say: "generate final assessment" or "summarize the project"
+> "generate final assessment" or "summarize the project"
 
 Claude will read all your session logs and create a comprehensive reflection.
+
+<details>
+<summary><b>Slash commands reference</b></summary>
+
+For those who prefer explicit commands:
+
+| Command | What it does |
+|---------|--------------|
+| `/devlog-start` | Begin a new session |
+| `/devlog-end` | End session and update time tracker |
+| `/devlog-status` | Show current session info and total time |
+| `/devlog-final` | Generate final project assessment |
+
+</details>
 
 ## What Gets Logged
 
