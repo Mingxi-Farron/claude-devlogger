@@ -111,6 +111,7 @@ Just talk naturally:
 - "note this down" or "add to the log"
 - "we solved the auth bug by..."
 - "this approach failed because..."
+- "screenshot: the particle system working" (logs timestamp + description)
 
 ### Ending a Session
 ```
@@ -141,7 +142,24 @@ Each session captures:
 - **Plan** - How you intended to approach it
 - **Problems & Solutions** - What broke, what you tried, what worked
 - **Milestones** - Key progress points reached
+- **Screenshots** - Timestamped visual progress notes
 - **Conclusion** - Summary and items for next time
+
+## Screenshot Logging
+
+For visual projects (games, interactive art, UI work), you can log screenshots without moving files around.
+
+**Setup:** Add your screenshot folder path to `devlog/README.md`:
+```
+- **Screenshots:** D:/Screenshots/MyProject/
+```
+
+**Usage:** After taking a screenshot, just say:
+```
+screenshot: the lighting finally looks right
+```
+
+Claude logs the timestamp and your description. The actual files stay where your OS saves them.
 
 ## License
 

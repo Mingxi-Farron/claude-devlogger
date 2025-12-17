@@ -2,8 +2,11 @@
 
 Read `devlog/README.md` to get:
 1. Project name and info
-2. Current session count from the Time Tracker table
-3. Total cumulative time
+2. Screenshots folder path
+3. Current session count from `devlog/TIME.md`
+4. Total cumulative time
+
+If screenshots path is set, confirm it with the user. If not set, ask if they want to configure one.
 
 Create a new session log file at `devlog/logs/YYYY-MM-DD-session.md` (use today's date) with this structure:
 
@@ -23,9 +26,17 @@ Create a new session log file at `devlog/logs/YYYY-MM-DD-session.md` (use today'
 ## Milestones
 - [ ] (to be filled)
 
+## Screenshots
+(to be filled when user says "screenshot: [description]")
+
 ## Conclusion
 (to be filled at session end)
 ```
+
+**When user says "screenshot: [description]":**
+- Note the current time as the identifier (HH-MM-SS format)
+- Add to the Screenshots section: `- \`HH-MM-SS\` - [their description]`
+- Confirm briefly: "Logged screenshot at HH:MM:SS"
 
 Then ask the user:
 1. "What are your goals for this session?"

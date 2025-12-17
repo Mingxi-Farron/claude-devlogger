@@ -5,6 +5,7 @@
 - **Tech Stack:** [e.g., Next.js, Unreal Engine 5.7, Python]
 - **Description:** [One-line project description]
 - **Started:** [YYYY-MM-DD]
+- **Screenshots:** [path to screenshot folder, e.g., D:/Screenshots/ProjectName/]
 
 ---
 
@@ -46,6 +47,9 @@ Each session log (`logs/YYYY-MM-DD-session.md`) contains:
 ## Milestones
 - [x] Milestone reached
 - [ ] Milestone pending
+
+## Screenshots
+- `HH-MM-SS` - description of what this captures
 
 ## Conclusion
 - Summary of progress
