@@ -1,6 +1,6 @@
-# devlog-kit
+# claude-devlogger
 
-Session logging toolkit for AI-assisted development with Claude Code.
+Session logging toolkit for Claude Code.
 
 ## Features
 
@@ -15,13 +15,13 @@ Session logging toolkit for AI-assisted development with Claude Code.
 ```bash
 # Clone into your project
 cd your-project
-git clone https://github.com/Mingxi-Farron/devlog-kit.git
+git clone https://github.com/Mingxi-Farron/claude-devlogger.git
 
 # Run setup (bash)
-./devlog-kit/setup.sh
+./claude-devlogger/setup.sh
 
 # Or PowerShell
-./devlog-kit/setup.ps1
+./claude-devlogger/setup.ps1
 ```
 
 ## What Setup Does
@@ -46,7 +46,7 @@ your-project/
 │   ├── TIME.md            (time tracker)
 │   ├── logs/              (session logs)
 │   └── media/             (screenshots)
-└── devlog-kit/            (can delete)
+└── claude-devlogger/      (can delete)
 ```
 
 ## Usage
