@@ -1,80 +1,89 @@
-# Project Dev Log
+# devlog-kit
 
-## Project Info
-- **Name:** [PROJECT_NAME]
-- **Tech Stack:** [e.g., Next.js, Unreal Engine 5.7, Python]
-- **Description:** [One-line project description]
-- **Started:** [YYYY-MM-DD]
+Session logging toolkit for AI-assisted development with Claude Code.
 
----
+## Features
 
-## Time Tracker
+- **Session Tracking** - Log goals, plans, problems, solutions, and milestones
+- **Time Tracking** - Automatic duration calculation and cumulative time
+- **Slash Commands** - `/devlog-start`, `/devlog-end`, `/devlog-status`, `/devlog-final`
+- **Natural Language** - Also works with "start logging", "end session", etc.
+- **Final Assessment** - Generate comprehensive project reflection when done
 
-| # | Date | Duration | Cumulative | Focus |
-|---|------|----------|------------|-------|
-| 1 | YYYY-MM-DD | 0h 00m | 0.0h | Initial setup |
+## Quick Setup
 
-**Total Time: 0.0 hours**
+```bash
+# Clone into your project
+cd your-project
+git clone https://github.com/Mingxi-Farron/devlog-kit.git
 
----
+# Run setup (bash)
+./devlog-kit/setup.sh
 
-## Quick Start for Claude
-
-When starting a new session, tell Claude:
-```
-Read devlog/README.md and the latest log in devlog/logs/. Continue from where we left off.
-```
-
-When ending a session:
-```
-Update the devlog with today's progress and update the time tracker.
+# Or PowerShell
+./devlog-kit/setup.ps1
 ```
 
----
+## What Setup Does
 
-## Folder Structure
+1. Copies `.claude/commands/` to your project root
+2. Copies `devlog/` folder to your project root
+3. Adds devlog section to your `CLAUDE.md` (creates if needed)
+
+## After Setup
+
 ```
-devlog/
-├── README.md              (this file - project overview & time tracking)
-├── logs/                  (session logs)
-│   └── YYYY-MM-DD-topic.md
-└── media/                 (screenshots, recordings)
-    └── YYYY-MM-DD/
-```
-
----
-
-## Session Log Template
-
-Create new logs at: `logs/YYYY-MM-DD-topic.md`
-
-```markdown
-# [Topic]
-**Date:** YYYY-MM-DD | **Session #:** X | **Duration:** Xh Xm
-
-## Goals
-- [ ] Goal 1
-- [ ] Goal 2
-
-## Completed
-- What was done
-- Decisions made
-
-## Next Session
-- Carry-over tasks
-- Ideas to explore
-
-## Notes
-- Issues encountered
-- Resources found
+your-project/
+├── CLAUDE.md              (with devlog instructions)
+├── .claude/
+│   └── commands/
+│       ├── devlog-start.md
+│       ├── devlog-end.md
+│       ├── devlog-status.md
+│       └── devlog-final.md
+├── devlog/
+│   ├── README.md          (project info - edit this)
+│   ├── TIME.md            (time tracker)
+│   ├── logs/              (session logs)
+│   └── media/             (screenshots)
+└── devlog-kit/            (can delete)
 ```
 
----
+## Usage
 
-## Setup for New Projects
+### Start a Session
+```
+/devlog-start
+```
+Or say: "start logging", "begin session"
 
-1. Copy this `devlog/` folder to your new project
-2. Update the **Project Info** section above
-3. Clear the time tracker (keep header row)
-4. Create `logs/` and `media/` folders if needed
-5. Start your first session log
+### End a Session
+```
+/devlog-end
+```
+Or say: "end session", "stop logging"
+
+### Check Status
+```
+/devlog-status
+```
+Or say: "how much time?", "session status"
+
+### Final Assessment (end of project)
+```
+/devlog-final
+```
+Or say: "finalize project", "generate assessment"
+
+## Session Log Structure
+
+Each session captures:
+- **Goals** - What you're trying to achieve
+- **Plan** - Your approach
+- **Problems & Solutions** - What went wrong, what you tried, what worked
+- **Milestones** - Progress checkpoints
+- **Conclusion** - Summary and carry-over items
+
+## License
+
+MIT
