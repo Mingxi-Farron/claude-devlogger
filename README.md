@@ -22,16 +22,59 @@ When working with Claude Code on a project, you naturally discuss goals, encount
 ## Quick Setup
 
 ```bash
-# Clone into your project
 cd your-project
 git clone https://github.com/Mingxi-Farron/claude-devlogger.git
-
-# Run setup (bash or git bash on Windows)
 ./claude-devlogger/setup.sh
+```
 
-# Or PowerShell
+<details>
+<summary><b>New to terminal? Click here for step-by-step instructions</b></summary>
+
+### Step 1: Open your terminal
+
+| Operating System | How to open |
+|------------------|-------------|
+| **Mac** | Press `Cmd + Space`, type "Terminal", press Enter |
+| **Windows** | Press `Win + R`, type "powershell", press Enter |
+| **Linux** | Press `Ctrl + Alt + T` |
+
+### Step 2: Navigate to your project folder
+
+Your project folder is where your code lives. Use the `cd` (change directory) command to get there.
+
+```bash
+# Example: if your project is in Documents/my-app
+cd Documents/my-app
+```
+
+**Tips:**
+- Use `ls` (Mac/Linux) or `dir` (Windows) to see what's in the current folder
+- Use `cd ..` to go up one folder level
+- Drag your folder into the terminal to auto-fill the path
+
+### Step 3: Clone claude-devlogger
+
+This downloads the devlogger files into your project:
+
+```bash
+git clone https://github.com/Mingxi-Farron/claude-devlogger.git
+```
+
+### Step 4: Run the setup script
+
+**On Mac/Linux (or Git Bash on Windows):**
+```bash
+./claude-devlogger/setup.sh
+```
+
+**On Windows PowerShell:**
+```powershell
 ./claude-devlogger/setup.ps1
 ```
+
+The script will copy the necessary files and set everything up. You'll see a success message when it's done.
+
+</details>
 
 ## What Setup Does
 
