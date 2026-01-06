@@ -22,8 +22,9 @@ Update the session log:
    ```
 2. Update **Milestones** checkboxes
 3. Fill in **Conclusion** section
-4. Calculate duration (current time - start time)
-5. Add duration to header: `**Duration:** Xh Xm`
+4. Get current time by running: `date "+%H:%M"`
+5. Calculate duration (current time - start time)
+6. Add duration to header: `**Duration:** Xh Xm`
 
 Update `devlog/TIME.md`:
 1. Add new row to the table:

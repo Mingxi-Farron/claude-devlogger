@@ -1,11 +1,11 @@
 # Project Dev Log
 
 ## Project Info
-- **Name:** [PROJECT_NAME]
-- **Tech Stack:** [e.g., Next.js, Unreal Engine 5.7, Python]
-- **Description:** [One-line project description]
-- **Started:** [YYYY-MM-DD]
-- **Screenshots:** [will be configured on first session, or "none" if not needed]
+- **Name:** Water2026
+- **Tech Stack:** Unreal Engine 5.7
+- **Description:** Water fluid simulation demo focusing on realistic water behavior and physics
+- **Started:** 2025-12-16
+- **Screenshots:** none
 
 ---
 
