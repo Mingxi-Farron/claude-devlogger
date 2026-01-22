@@ -5,7 +5,7 @@
 - **Tech Stack:** Unreal Engine 5.7
 - **Description:** Water fluid simulation demo focusing on realistic water behavior and physics
 - **Started:** 2025-12-16
-- **Screenshots:** none
+- **Screenshots:** devlog/media/
 
 ---
 
@@ -38,6 +38,16 @@ Each session log (`logs/YYYY-MM-DD-session.md`) contains:
 - Approach step 1
 - Approach step 2
 
+## Progress (In Session)
+
+### Feature/Task Name
+Claude formats based on content type:
+- Bullet points for general notes
+- Numbered lists for SOPs/procedures
+- Free-form for quotes, references, code blocks
+
+![screenshot description](../media/YYYY-MM-DD/HH-MM-SS.png)
+
 ## Problems & Solutions
 ### Problem: [description]
 - **Attempted:** [what was tried]
@@ -48,13 +58,14 @@ Each session log (`logs/YYYY-MM-DD-session.md`) contains:
 - [x] Milestone reached
 - [ ] Milestone pending
 
-## Screenshots
-- `HH-MM-SS` - description of what this captures
+## To-Do (Next Session)
+- [ ] Carry-over items
 
 ## Conclusion
 - Summary of progress
-- Carry-over to next session
 ```
+
+**Note:** Screenshots are inserted inline within the Progress section, directly after related documentation.
 
 ---
 

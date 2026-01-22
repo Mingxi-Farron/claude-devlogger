@@ -143,23 +143,76 @@ For those who prefer explicit commands:
 Each session captures:
 - **Goals** - What you set out to accomplish
 - **Plan** - How you intended to approach it
+- **Progress** - Work done with inline screenshots
 - **Problems & Solutions** - What broke, what you tried, what worked
 - **Milestones** - Key progress points reached
-- **Screenshots** - Timestamped visual progress notes
-- **Conclusion** - Summary and items for next time
+- **To-Do** - Carry-over items for next session
+- **Conclusion** - Summary of the session
 
 ## Screenshot Logging (Optional)
 
-For visual projects (games, interactive art, UI work), you can log screenshots without moving files around.
+For visual projects (games, interactive art, UI work), you can capture and embed screenshots directly in your devlog.
 
-**Setup:** On your first session, Claude will ask if you want screenshot logging. If yes, you'll set a dedicated folder path (not your OS default, which gets cluttered). If you don't need it, just skip - Claude won't ask again.
+### Setup (Windows)
 
-**Usage:** After taking a screenshot, just say:
+Install the MCP clipboard server:
+```bash
+cd ~/AppData/Local
+git clone https://github.com/marco-jardim/mcp-windows-clipboard.git
+cd mcp-windows-clipboard
+npm install && npm run build
 ```
-screenshot: the lighting finally looks right
+
+Add to Claude Code:
+```bash
+claude mcp add --transport stdio windows-clipboard -- node ~/AppData/Local/mcp-windows-clipboard/dist/index.js
 ```
 
-Claude logs the timestamp and your description. The actual files stay where your OS saves them - no file management needed.
+Verify connection:
+```bash
+claude mcp list
+# Should show: windows-clipboard - ✓ Connected
+```
+
+### Usage
+
+1. Take a screenshot (`Win+Shift+S`) - image stays in clipboard
+2. Tell Claude to save it (natural language) while image is still in clipboard
+3. Claude saves to `devlog/media/YYYY-MM-DD/HH-MM-SS.png` (24-hour format)
+4. Image is embedded inline in the Progress section
+
+**Example phrases that work:**
+```
+screenshot: particle system working correctly
+save this screenshot as the fixed collision
+capture this - it shows the lighting bug
+```
+
+**Example in session:**
+```
+You: screenshot: particle system working correctly
+Claude: Screenshot saved: devlog/media/2026-01-22/14-30-45.png
+```
+
+**Result in markdown:**
+```markdown
+### Particle System Fix
+Fixed the collision detection issue...
+
+![particle system working correctly](../media/2026-01-22/14-30-45.png)
+```
+
+### Without MCP (Fallback)
+
+If MCP is not configured, screenshots are logged as text-only:
+```markdown
+[Screenshot: particle system working correctly at 14:30:45]
+```
+
+### Notes
+- Folders (`devlog/media/YYYY-MM-DD/`) are created automatically
+- Multiple screenshots on the same day use different timestamps - no conflicts
+- Image must be in clipboard when you say the command
 
 ## License
 
