@@ -14,14 +14,17 @@ Find the most recent session log file in `devlog/logs/`. If a previous session e
 
 If no previous session or no to-do items found, skip this step.
 
-**Screenshot folder setup (first session only):**
+**Screenshot setup (first session or on request):**
 
-If this is the first session (no prior logs in `devlog/logs/`) AND screenshots path is not set:
-- Ask: "Where should screenshots be saved? Default is `devlog/media/`"
-- Update `devlog/README.md` with the path
-- Confirm MCP clipboard server is configured (if not, warn user)
+If this is the first session (no prior logs in `devlog/logs/`) AND screenshots path is not set or is "none":
+1. Ask: "Do you want to set up screenshot capture? I can handle the full setup automatically."
+2. If yes, execute the setup from `.claude/commands/devlog-screenshot-setup.md`
+3. Run all commands, create files, configure MCP
+4. Confirm setup complete
 
-If screenshots path is already set, don't ask about it.
+User can also trigger this anytime by saying "set up screenshots" or "configure screenshot capture".
+
+If screenshots path is already set to `devlog/media/`, skip this step.
 
 **Formatting Progress notes:**
 

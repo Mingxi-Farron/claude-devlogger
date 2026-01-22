@@ -155,6 +155,11 @@ For visual projects (games, interactive art, UI work), you can capture and embed
 
 ### Setup (Windows)
 
+**Let Claude handle it:** Just say "set up screenshots" or start your first session - Claude will offer to configure everything automatically.
+
+<details>
+<summary>Manual setup (if needed)</summary>
+
 Install the MCP clipboard server:
 ```bash
 cd ~/AppData/Local
@@ -173,6 +178,8 @@ Verify connection:
 claude mcp list
 # Should show: windows-clipboard - ✓ Connected
 ```
+
+</details>
 
 ### Usage
 

@@ -10,5 +10,6 @@
 | 6 | 2026-01-13 | 8h 30m | 17.4h | GitHub repo setup, collider fix, plugin config |
 | 7 | 2026-01-20 | 0h 5m | 17.5h | 2D liquid waterfall exploration |
 | 8 | 2026-01-21 | 5h 58m | 23.5h | Niagara 参数测试器, Fog 文档, 瀑布场景 |
+| 9 | 2026-01-22 | 2h 16m | 25.8h | Camera-facing fix, clipboard screenshot system |
 
-**Total Time: 23.5 hours**
+**Total Time: 25.8 hours**
