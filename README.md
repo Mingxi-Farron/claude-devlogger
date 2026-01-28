@@ -221,6 +221,10 @@ If MCP is not configured, screenshots are logged as text-only:
 - Multiple screenshots on the same day use different timestamps - no conflicts
 - Image must be in clipboard when you say the command
 
+## TODO
+
+- [ ] Add Mac screenshot solution (evaluate: MCP vs script approach)
+
 ## License
 
 MIT

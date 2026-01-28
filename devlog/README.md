@@ -28,7 +28,7 @@ Each session log (`logs/YYYY-MM-DD-session.md`) contains:
 
 ```markdown
 # Session #X
-**Date:** YYYY-MM-DD | **Start:** HH:MM | **Duration:** Xh Xm
+**Date:** YYYY-MM-DD | **Start:** HH:MM | **End:** HH:MM | **Duration:** Xh Xm
 
 ## Goals
 - [ ] Goal 1

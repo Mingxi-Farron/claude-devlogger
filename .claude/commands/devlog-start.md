@@ -33,8 +33,36 @@ When user provides documentation during the session:
 - Format content based on type:
   - Bullet points for general notes/findings
   - Numbered lists for SOPs/step-by-step procedures
+  - Tables for configuration items, comparisons, or parameter lists
   - Free-form for quotes, references, code blocks, or specific formats
+- Screenshots should be placed immediately after the related paragraph
 - Claude decides complexity based on user input
+
+**Example Progress formatting:**
+
+```markdown
+## Progress
+
+### Water Particle System Setup
+
+1. Open Niagara Editor
+2. Create new Niagara System from template
+3. Configure emitter parameters
+
+| Parameter | Value | Notes |
+|-----------|-------|-------|
+| Spawn Rate | 500 | Adjust for performance |
+| Lifetime | 2.0s | Controls trail length |
+
+![Niagara Editor with spawn settings](../media/2026-01-15/10-30-45.png)
+
+Found that increasing spawn rate beyond 1000 causes frame drops.
+
+### Collision Detection
+
+- Enabled Scene Depth collision
+- Tested with static mesh obstacles
+```
 
 Create a new session log file at `devlog/logs/YYYY-MM-DD-session.md` (use today's date) with this structure:
 
