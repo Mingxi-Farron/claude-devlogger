@@ -1,2 +1,8 @@
 .obsidian/
 tmpclaude-*
+
+# Session logs and media (keep local, don't push to remote)
+devlog/logs/*.md
+devlog/media/**
+!devlog/logs/.gitkeep
+!devlog/media/.gitkeep
