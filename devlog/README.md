@@ -69,6 +69,26 @@ Claude formats based on content type:
 
 ---
 
+## Conventions
+
+### Midnight-Spanning Sessions
+当 session 跨越午夜时（如 23:00 开始，01:00 结束），**不创建新 session**，而是：
+
+1. **文件名保持原日期**：`2026-01-29-session.md`（以开始日期为准）
+2. **Date 字段标注跨日**：`**Date:** 2026-01-29 ~ 01-30`
+3. **End 时间标注 +1d**：`**End:** 00:50 (+1d)`
+4. **TIME.md 日期用波浪线**：`2026-01-29~30`
+
+示例：
+```markdown
+# Session #14
+**Date:** 2026-01-29 ~ 01-30 | **Start:** 23:00 | **End:** 00:50 (+1d)
+```
+
+这样避免同一工作流被拆分成多个 session。
+
+---
+
 ## Setup for New Projects
 
 1. Run the setup script from devlog-kit

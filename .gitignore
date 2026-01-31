@@ -4,5 +4,7 @@ tmpclaude-*
 # Session logs and media (keep local, don't push to remote)
 devlog/logs/*.md
 devlog/media/**
+devlog/session-*/
+devlog/TIME.md
 !devlog/logs/.gitkeep
 !devlog/media/.gitkeep

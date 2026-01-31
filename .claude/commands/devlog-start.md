@@ -64,11 +64,15 @@ Found that increasing spawn rate beyond 1000 causes frame drops.
 - Tested with static mesh obstacles
 ```
 
+**Get current time:**
+Run `date "+%H:%M"` (works on Git Bash/Unix/macOS) to get the current time.
+On Windows without Git Bash, ask the user for the current time.
+
 Create a new session log file at `devlog/logs/YYYY-MM-DD-session.md` (use today's date) with this structure:
 
 ```markdown
 # Session #[NEXT_NUMBER]
-**Date:** [TODAY] | **Start:** [CURRENT_TIME]
+**Date:** [TODAY] | **Start:** [HH:MM from date command]
 
 ## Goals
 - [ ] (to be filled)
