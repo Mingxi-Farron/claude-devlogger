@@ -15,5 +15,9 @@
 | 11 | 2026-01-23 | 3h 34m | 31.6h | Dual Emitter Phase 1 完成, Phase 2 Follower 配置 |
 | 12 | 2026-01-27 | 0h 5m | 31.7h | SimulationOffset, Niagara 参数重命名, 架构决策 |
 | 13 | 2026-01-28 | 1h 44m | 33.4h | Camera 激活, TASK-008 Video State 完整实现 |
+| 14 | 2026-01-29~30 | ~4h | 37.4h | TASK-002/004 完成, TASK-013 视频分辨率, TASK-016 UserConfigManager 测试 |
+| 15 | 2026-01-30 | ~10h | 47.4h | DPI 修复, ImGui 优化, Virtual Waterfall Phase 1-3 (含 Session 15b) |
+| 16 | 2026-02-03 | 7h | 54.4h | TASK-021 Spawn Box Rotation, TASK-005 Niagara Fluids 碰撞调查 |
+| 17 | 2026-02-04 | 7h | 61.4h | Packaging fix, CanvasManager gradient bug fix, MOD-002 Phase 1-3 done |
 
-**Total Time: 33.4 hours**
+**Total Time: 61.4 hours**
