@@ -1,5 +1,17 @@
 # End Devlog Session
 
+## Natural Language Triggers
+
+This command MUST be invoked when the user says any of these (case-insensitive):
+- "end session" / "close session" / "finish session"
+- "结束会话" / "结束记录" / "收工"
+- "devlog end" / "stop logging"
+- Or directly: `/devlog-end`
+
+**When triggered, execute the FULL workflow below. Do NOT skip any step.**
+
+---
+
 ## Find Session to Close
 
 Find the most recent session log in `devlog/logs/`:

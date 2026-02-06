@@ -1,5 +1,17 @@
 # Devlog Status
 
+## Natural Language Triggers
+
+This command MUST be invoked when the user says any of these (case-insensitive):
+- "how much time?" / "total time" / "session status"
+- "多少时间" / "时间统计" / "进度"
+- "devlog status" / "check progress"
+- Or directly: `/devlog-status`
+
+**When triggered, execute the FULL workflow below. Do NOT skip any step.**
+
+---
+
 ## Data Validation First
 
 **1. Check TIME.md exists and is valid:**

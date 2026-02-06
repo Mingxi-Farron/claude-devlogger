@@ -19,5 +19,6 @@
 | 15 | 2026-01-30 | ~10h | 47.4h | DPI 修复, ImGui 优化, Virtual Waterfall Phase 1-3 (含 Session 15b) |
 | 16 | 2026-02-03 | 7h | 54.4h | TASK-021 Spawn Box Rotation, TASK-005 Niagara Fluids 碰撞调查 |
 | 17 | 2026-02-04 | 7h | 61.4h | Packaging fix, CanvasManager gradient bug fix, MOD-002 Phase 1-3 done |
+| 18 | 2026-02-06 | 0h 30m | 61.9h | TASK-028 Curtain Mode, big wave water delivery |
 
-**Total Time: 61.4 hours**
+**Total Time: 61.9 hours**

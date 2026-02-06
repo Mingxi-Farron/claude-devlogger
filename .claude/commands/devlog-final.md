@@ -1,5 +1,17 @@
 # Generate Final Project Assessment
 
+## Natural Language Triggers
+
+This command MUST be invoked when the user says any of these (case-insensitive):
+- "finalize project" / "final assessment" / "generate report"
+- "最终评估" / "项目总结" / "生成报告"
+- "wrap up project" / "project summary"
+- Or directly: `/devlog-final`
+
+**When triggered, execute the FULL workflow below. Do NOT skip any step.**
+
+---
+
 Read all session logs from `devlog/logs/` in chronological order.
 
 Read `devlog/TIME.md` for total time invested.

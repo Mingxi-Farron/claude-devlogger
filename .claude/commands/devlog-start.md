@@ -1,5 +1,17 @@
 # Start Devlog Session
 
+## Natural Language Triggers
+
+This command MUST be invoked when the user says any of these (case-insensitive):
+- "start logging" / "start session" / "begin session"
+- "开始记录" / "开始工作" / "新会话"
+- "let's start" (in context of work/session)
+- Or directly: `/devlog-start`
+
+**When triggered, execute the FULL workflow below. Do NOT skip any step.**
+
+---
+
 Read `devlog/README.md` to get:
 1. Project name and info
 2. Screenshots folder path (if configured)
